@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(22, 22, 51);
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 85%;
+    height: 16vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav{
+    z-index: 1;
+    padding: 128px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    transition: 0.6s;
+    transform: translateX(100%);
+}
+header nav.active{
+    transform: translateX(0%);
+}
+.exit{
+    margin: 40px 0 0 40px;
+    font-size: 32px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: rgb(22, 18, 53);
+}
+nav ul li{
+    margin: 28px 0;
+    text-transform: uppercase;
+}
+nav ul li a{
+    color: rgb(22, 18, 53);
+    letter-spacing: 3px;
+    border-bottom: 1px solid rgb(22, 18, 53);
+}
+
+    
+.logo img{
+    height: 70px;
+    cursor: pointer;
+}
+header i{
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+.showcase{
+    position: relative;
+    min-height: 52vh;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.showcase p{
+    font-size: 320px;
+    text-transform: uppercase;
+    letter-spacing: 34px;
+    color: rgba(143, 138, 138, 0.1);
+    user-select: none;
+}
+.showcase img{
+    height: 300px;
+    position: absolute;
+}
+
+
+
+.main-bottom{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.intro{
+    width: 40%;
+    color: #fff;
+}
+.intro h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.intro p{
+    margin-top: 16px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.btn{
+    margin-top: 16px;
+    font-size: 22px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    padding: 6px 20px;
+    background-color: #fff;
+    color: rgb(23, 23, 37);
+    font-weight: bold;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+.btn:hover{
+    color: #fff;
+    background-color: rgb(109, 106, 106);
+}
+.contact{
+    height: 26vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 24px;
+    color: #fff;
+}
+.contact i{
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+.contact i:hover{
+    color: grey;
+    transform: scale3d(1.2,1.2,1.2);
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 2000px){
+    header nav{
+        padding: 350px 188px;
+    }
+    .exit{
+        font-size: 42px;
+    }
+    nav ul li{
+        margin: 34px 0;
+    }  
+    .logo img{
+        height: 86px;
+    }
+    header i{
+        font-size: 38px;
+    }
+    .showcase p{
+        font-size: 360px;
+        letter-spacing: 40px;
+    }
+    .showcase img{
+        height: 340px;
+        position: absolute;
+    }
+    
+    .intro h1{
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+    .intro p{
+        margin-top: 18px;
+        font-size: 20px;
+    }
+    .btn{
+        margin-top: 28px;
+        font-size: 28px;
+        padding: 8px 24px;
+    }
+    .contact{
+        font-size: 36px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1300px){
+    header nav{
+        padding: 200px 90px;
+    }
+    .showcase p{
+        font-size: 260px;
+        letter-spacing: 40px;
+    }
+    .intro{
+        width: 50%;
+    }
+    .intro h1{
+        letter-spacing: 4px;
+    }
+    .intro p{
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    .btn{
+        font-size: 24px;;
+    }
+    .contact{
+        font-size: 30px;
+    }
+}
+
+
+@media  screen and (max-width: 980px){
+    header nav{
+        padding: 126px 90px;
+    }
+    .showcase p{
+        font-size: 220px;
+    }
+    .showcase img{
+        height: 260px;
+    }
+    .intro{
+        width: 60%;
+    }
+    .intro h1{
+        letter-spacing: 3px;
+    }
+    .intro p{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .btn{
+        font-size: 22px;;
+    }
+    .contact{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+@media  screen and (max-width: 860px){
+    header nav{
+        padding: 144px 90px;
+    }
+    .exit{
+        font-size: 28px;
+    }
+    nav ul li{
+        margin: 24px 0;
+    }  
+    .logo img{
+        height: 66px;
+    }
+    header i{
+        font-size: 28px;
+    }
+    .showcase p{
+        font-size: 160px;
+        letter-spacing: 40px;
+    }
+    .showcase img{
+        height: 240px;
+        position: absolute;
+    }
+    
+    .intro h1{
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+    .intro p{
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 20px;
+        padding: 8px 24px;
+    }
+    .contact{
+        font-size: 28px;
+    }
+}
+
+
+
+@media  screen and (max-width: 690px){
+    header nav{
+        padding: 144px 80px;
+    } 
+    .showcase p{
+        font-size: 130px;
+        letter-spacing: 36px;
+    }
+    .showcase img{
+        height: 200px;
+        position: absolute;
+    }
+    
+    .intro h1{
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+    .intro p{
+        font-size: 14px;
+    }
+    .btn{
+        font-size: 18px;
+        padding: 6px 20px;
+    }
+    .contact{
+        font-size: 24px;
+    }
+}
+
+
+
+@media  screen and (max-width: 570px){
+    header nav{
+        padding: 182px 70px;
+        font-size: 18px;
+    } 
+
+    header i{
+        font-size: 22px;
+    }
+
+    .logo img{
+        height: 60px;
+    }
+
+    .showcase p{
+        font-size: 100px;
+        letter-spacing: 26px;
+    }
+    .showcase img{
+        height: 160px;
+    }
+
+    .intro{
+        width: 70%;
+    }
+    
+    .intro h1{
+        font-size: 22px;
+    }
+    .intro p{
+        font-size: 12px;
+    }
+    .btn{
+        font-size: 16px;
+        padding: 5px 16px;
+    }
+    .contact{
+        font-size: 20px;
+    }
+}
+
+
+@media  screen and (max-width: 435px){
+    header nav{
+        padding: 182px 30px;
+    } 
+    header i{
+        font-size: 20px;
+    }
+    .logo img{
+        height: 50px;
+    }
+    .showcase p{
+        font-size: 80px;
+        letter-spacing: 22px;
+    }
+    .showcase img{
+        height: 140px;
+    }
+    .intro{
+        width: 74%;
+    }
+    .intro h1{
+        font-size: 20px;
+    }
+    .intro p{
+        margin-top: 12px;
+        font-size: 10px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 5px 14px;
+    }
+    .contact{
+        font-size: 16px;
+    }
+}
